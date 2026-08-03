@@ -1,0 +1,48 @@
+/**
+ * @name EmojiReplace (Microsoft 3D)
+ * @description Replaces Discord's Emojis with Microsoft 3D Emojis
+ * @author DevilBro
+ * @version 1.0.1
+ * @authorId 278543574059057154
+ * @invite Jx3TjNS
+ * @donate https://www.paypal.me/MircoWittrien
+ * @patreon https://www.patreon.com/MircoWittrien
+ * @website https://mwittrien.github.io/
+ * @source https://github.com/mwittrien/BetterDiscordAddons/tree/master/Themes/EmojiReplace/
+ * @updateUrl https://mwittrien.github.io/BetterDiscordAddons/Themes/EmojiReplace/EmojiReplace.theme.css
+ */
+
+/* ==========================================================================
+   PROVEEDOR: Microsoft 3D
+   ========================================================================== */
+
+/* Badge del desarrollador */
+@import url(https://mwittrien.github.io/BetterDiscordAddons/Themes/_res/ThemeDevBadge.css);
+
+/* Spritesheets y categorías de emojis */
+@import url(https://mwittrien.github.io/BetterDiscordAddons/Themes/EmojiReplace/src/Microsoft-3D/spritesheets.css);
+@import url(https://mwittrien.github.io/BetterDiscordAddons/Themes/EmojiReplace/src/Microsoft-3D/people.css);
+@import url(https://mwittrien.github.io/BetterDiscordAddons/Themes/EmojiReplace/src/Microsoft-3D/nature.css);
+@import url(https://mwittrien.github.io/BetterDiscordAddons/Themes/EmojiReplace/src/Microsoft-3D/food.css);
+@import url(https://mwittrien.github.io/BetterDiscordAddons/Themes/EmojiReplace/src/Microsoft-3D/activity.css);
+@import url(https://mwittrien.github.io/BetterDiscordAddons/Themes/EmojiReplace/src/Microsoft-3D/travel.css);
+@import url(https://mwittrien.github.io/BetterDiscordAddons/Themes/EmojiReplace/src/Microsoft-3D/objects.css);
+@import url(https://mwittrien.github.io/BetterDiscordAddons/Themes/EmojiReplace/src/Microsoft-3D/symbols.css);
+@import url(https://mwittrien.github.io/BetterDiscordAddons/Themes/EmojiReplace/src/Microsoft-3D/flags.css);
+
+/* ==========================================================================
+   REGLAS DE SPRITE
+   Eliminan el fondo y la máscara nativa de Discord para mostrar los
+   emojis personalizados usando las variables definidas en spritesheets.css
+   ========================================================================== */
+
+.sprite__294b3 {
+    -webkit-mask: none !important;
+    background-color: transparent !important;
+    background-position: var(--custom-emoji-sprite-bg-position) !important;
+    background-size: var(--custom-emoji-sprite-bg-size) !important;
+}
+
+.spriteGreyscale__7b70f {
+    filter: grayscale(1) !important;
+}
